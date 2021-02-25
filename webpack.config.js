@@ -14,12 +14,6 @@ module.exports = merge([
     },
   },
   federations({
-    name: 'condRootMf',
-    remotes: {
-      condAuthPages: 'condAuthPages@http://localhost:3002/remoteEntry.js',
-      condLayouts: 'condLayouts@http://localhost:3003/remoteEntry.js',
-      condFormElements: 'condFormElements@http://localhost:3004/remoteEntry.js',
-    },
     exposes: {
       './Router': './src/app/common/router',
       './AppAccess': './src/app/common/session/AppAccess',
